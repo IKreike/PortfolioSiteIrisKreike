@@ -5,12 +5,12 @@ console.log(i);
 
 
 const videos = [
-    "Assets/videos/gold-appearance.mp4",
-    "Assets/videos/gold-pet.mp4",
-    "Assets/videos/gold-disappearance.mp4",
-    "Assets/videos/green-appearance.mp4",
-    "Assets/videos/green-pet.mp4",
-    "Assets/videos/green-disappearance.mp4",
+    // "Assets/videos/gold-appearance.mp4",
+    // "Assets/videos/gold-pet.mp4",
+    // "Assets/videos/gold-disappearance.mp4",
+    // "Assets/videos/green-appearance.mp4",
+    // "Assets/videos/green-pet.mp4",
+    // "Assets/videos/green-disappearance.mp4",
     // boekfilmpjes
     "Assets/videos/OpenBook.mp4",
     "Assets/videos/IdleBook.mp4",
@@ -40,51 +40,51 @@ const videos = [
 
 const tostinis = {
     titel: "tostini's",
-    tekstOpdracht: "Een one-pager over jouw favoriete eten, een naïve mascot stijl en het gebruik van maximaal 2 kleuren(En tinten en tonen hiervan).",
+    tekstOpdracht: "",
     tekstKwaliteiten: "Kleurtheorie Character design Creaivieteit binnen limieten Passend thema bedenken en aanhouden",
-    tekstUitwerking: "Bij dit project heb ik door het gebruik van 2 kleuren en tonen daarvan een one-pager gemaakt voor mijn favoriete eten, tosti’s. De opdracht was om 3 kopjes te maken, en gebruik te maken van mascottes. Ik heb de twee complementaire kleuren groen en magenta gekozen, omdat de extra challenge van het gebruik van onnatuurlijke kleuren mij aansprak, in een onderwerp dat uit natuurlijke tonen bestaat.",
+    tekstUitwerking: "",
     plaatje1: "url('../Assets/PortfolioPics/Tostiny's/tostini's-final.jpeg')",
     plaatje2: "../Assets/PortfolioPics/Tostiny's/mascotte-1.png"
 }
 
 const KeesClosed = {
     titel: "KeesClosed",
-    tekstOpdracht: "Maak iets wat dicht bij je passie licht en de wereld verbeterd Uitwerking: Een excape box die mensen op de hoogte stelt van het gevaar van (online)",
+    tekstOpdracht: "The goal of this project was to make a product that lies close to my passion, and that would simultaneously help better the world. This is a shared project between Tessa van Breukelen, Denizay Ögmen and me. Our shared passion for games and storytelling landed us in this group, and the product of this project made us all proud.",
     tekstKwaliteiten: "kwaliteiten/skills (meerdere dingen of een andere array??)",
-    tekstUitwerking: "Ik heb in dit project met een groepje een puzzelbox gemaakt. Deze puzzelbox heeft 3 stadia, waarin je een verhaal volgt en helpt de HvA te beschermen tegen hackers door codes door te geven. Dit project was een groot project bestaande uit meerdere delen zoals puzzeldesign, code en vormgeving. Ik heb me hierbij gericht op het puzzeldesign, om te zorgen dat de puzzels en het verhaal goed lopen en passen bij het thema.",
+    tekstUitwerking: "This puzzlebox consists of three stadia, in wich the user helps a hacker protect an organization from online criminals. Throughout the game, the puzzler can pick up hints that something is wrong, and that the hacker they are helping might not all be trusted. These clues are common signs of internet scamming such as weird e-mail addresses, being asked to klick on links and the promise of a big prize. Making use of this, we tried to make the puzzlers aware of the dangers of common scams on the internet.",
     plaatje1: "url('../Assets/PortfolioPics/KEES/Kees-open.jpeg')",
     plaatje2: "../Assets/PortfolioPics/KEES/Kees-closed.jpeg"
 }
 
 const FEDsite = {
     titel: "Site (na)Maken",
-    tekstOpdracht: "",
+    tekstOpdracht: "For this project I tried to remake 2 pages of the Floraholland nl site with front-end coding. I used HTML, CSS and JavaScript to make the pages look an work as similar as possible after witch I added my own flourish with svg animation, a darkmode and accessibility options. ",
     tekstKwaliteiten: "",
-    tekstUitwerking: "In deze opdracht heb ik zo goed mogelijk van 2 pagina’s de site van floraholland in code nagebouwd. Hierna heb ik verschillende features toegevoegd, zoals een darkmode en een optie om de lettergrootte aan te passen.  ",
+    tekstUitwerking: "I really liked this project, as it developed my skills in coding much further in what I expected. In having to re-build something you are forced to discover new ways and tricks of doing things, instead of sticking in your old and trusted methods. For example I learned a lot about svg animation and saw how such a small and relatively simple thing can lift up the website as a whole. ",
     plaatje1: "url('../Assets/PortfolioPics/FEDsite/FEDmine.jpg')",
-    plaatje2:"Assets/PortfolioPics/FEDsite/FEDAnimatie.png"
+    plaatje2:"../Assets/PortfolioPics/FEDsite/FEDAnimatie.png"
 }
 
 const kaarten = {
-    titel: "Fantasie kaartmaken",
+    titel: "Fantasy Mapmaking",
     tekstOpdracht: "",
     tekstKwaliteiten: "",
     tekstUitwerking: "",
-    plaatje1: "url('../')",
-    plaatje2:""
+    plaatje1: "url('../Assets/PortfolioPics/Kaarten/map-1.1.jpg')",
+    plaatje2:"../Assets/PortfolioPics/Kaarten/map-3.jpg"
 }
 
 const flesjes = {
-    titel: "flesjes maken",
-    tekstOpdracht: " ",
+    titel: "Bottle Art",
+    tekstOpdracht: "In my personal Time I like to make things. One these interests is turning tiny glass bottles into art. I use all kind of materials and techniques to make these bottles come to life, and the end results are beautiful showpieces that are easy to fall in love with.",
     tekstKwaliteiten: "",
-    tekstUitwerking: "",
-    plaatje1: "url('../')",
-    plaatje2:""
+    tekstUitwerking: "Doing these little personal project makes me explore the limits of my creative brain. I constantly run into questions, for example: how am I going to display realistic moss? (Answer: use dried moss) Figuring out solutions for these problems takes a lot of trial and error, but more often than the other try-out lead to inspiration for other projects. My goal is to use different technieques and materials that combine into new designs.",
+    plaatje1: "url('../Assets/PortfolioPics/Flesjes/bottle-mushroom1.jpg')",
+    plaatje2:"../Assets/PortfolioPics/Flesjes/bottle-death.jpg"
 }
 
 const characters = {
-    titel: "",
+    titel: "Character design",
     tekstOpdracht: " ",
     tekstKwaliteiten: "",
     tekstUitwerking: "",
