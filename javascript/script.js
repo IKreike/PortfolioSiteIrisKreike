@@ -5,12 +5,12 @@ console.log(i);
 
 
 const videos = [
-    // "Assets/videos/gold-appearance.mp4",
-    // "Assets/videos/gold-pet.mp4",
-    // "Assets/videos/gold-disappearance.mp4",
-    // "Assets/videos/green-appearance.mp4",
-    // "Assets/videos/green-pet.mp4",
-    // "Assets/videos/green-disappearance.mp4",
+    "Assets/videos/gold-appearance.mp4",
+    "Assets/videos/gold-pet.mp4",
+    "Assets/videos/gold-disappearance.mp4",
+    "Assets/videos/green-appearance.mp4",
+    "Assets/videos/green-pet.mp4",
+    "Assets/videos/green-disappearance.mp4",
     // boekfilmpjes
     "Assets/videos/OpenBook.mp4",
     "Assets/videos/IdleBook.mp4",
@@ -43,8 +43,8 @@ const tostinis = {
     tekstOpdracht: "Een one-pager over jouw favoriete eten, een naïve mascot stijl en het gebruik van maximaal 2 kleuren(En tinten en tonen hiervan).",
     tekstKwaliteiten: "Kleurtheorie Character design Creaivieteit binnen limieten Passend thema bedenken en aanhouden",
     tekstUitwerking: "Bij dit project heb ik door het gebruik van 2 kleuren en tonen daarvan een one-pager gemaakt voor mijn favoriete eten, tosti’s. De opdracht was om 3 kopjes te maken, en gebruik te maken van mascottes. Ik heb de twee complementaire kleuren groen en magenta gekozen, omdat de extra challenge van het gebruik van onnatuurlijke kleuren mij aansprak, in een onderwerp dat uit natuurlijke tonen bestaat.",
-    plaatje1: "../Assets/Portfolio Pics/Tostiny's/tostini's-final.jpeg",
-    plaatje2: "../Assets/Portfolio Pics/Tostiny's/mascotte-1.png"
+    plaatje1: "url('../Assets/PortfolioPics/Tostiny's/tostini's-final.jpeg')",
+    plaatje2: "../Assets/PortfolioPics/Tostiny's/mascotte-1.png"
 }
 
 const KeesClosed = {
@@ -52,8 +52,8 @@ const KeesClosed = {
     tekstOpdracht: "Maak iets wat dicht bij je passie licht en de wereld verbeterd Uitwerking: Een excape box die mensen op de hoogte stelt van het gevaar van (online)",
     tekstKwaliteiten: "kwaliteiten/skills (meerdere dingen of een andere array??)",
     tekstUitwerking: "Ik heb in dit project met een groepje een puzzelbox gemaakt. Deze puzzelbox heeft 3 stadia, waarin je een verhaal volgt en helpt de HvA te beschermen tegen hackers door codes door te geven. Dit project was een groot project bestaande uit meerdere delen zoals puzzeldesign, code en vormgeving. Ik heb me hierbij gericht op het puzzeldesign, om te zorgen dat de puzzels en het verhaal goed lopen en passen bij het thema.",
-    plaatje1: "../Assets/Portfolio Pics/KEES/Kees-open.jpeg",
-    plaatje2: "../Assets/Portfolio Pics/KEES/Kees-closed.jpeg"
+    plaatje1: "url('../Assets/PortfolioPics/KEES/Kees-open.jpeg')",
+    plaatje2: "../Assets/PortfolioPics/KEES/Kees-closed.jpeg"
 }
 
 const FEDsite = {
@@ -103,7 +103,8 @@ console.log(artikelen[2].titel);
 
 
 var mainpic =document.querySelector(".banner");
-console.log(mainpic.style.backgroundImage);
+// console.log(mainpic.style.backgroundImage);
+// var mainBlock = document.querySelector(".")
 
 
 var video = document.querySelector("#video");
@@ -128,6 +129,8 @@ function volgendePagina1() {
     console.log(play.length);
     setTimeout(volgendePagina2, 2000);
     // play.length gebruiken ipv 2 sec, kan alleen als je weet hoeveel fps (werkt nog steeds niet diosfjasljflah) (met *50 werkte het ongeveer)
+
+    mainpic.classList.toggle("invis");
 }
 
 function volgendePagina2() {
@@ -144,6 +147,7 @@ function volgendePagina3() {
     let play = videos[i];
     video.src = play;
     updateTekst();
+    mainpic.classList.toggle("invis");
 }
 
 // https://stackoverflow.com/questions/52514522/html5-video-how-to-seamlessly-play-several-videos-and-then-loop-the-sequence
@@ -156,6 +160,8 @@ function vorigePagina() {
     console.log(play.length);
     setTimeout(vorigePagina2, 2000);
     // play.length gebruiken ipv 2 sec, kan alleen als je weet hoeveel fps
+
+    mainpic.classList.toggle("invis");
 }
 
 function vorigePagina2() {
@@ -185,7 +191,9 @@ function updateTekst() {
     subImg.src= artikelen[Math.round(i / 3)].plaatje2;
     console.log("titel word vervangen");
     // mainpic.src= artikelen[Math.round(i / 3)].plaatje1;
-    // mainpic.style.backgroundImage= url('artikelen[Math.round(i / 3)].plaatje1');
+    mainpic.style.backgroundImage= artikelen[Math.round(i / 3)].plaatje1;
     console.log(mainpic);
     console.log(artikelen[Math.round(i / 3)].plaatje1);
 }
+
+//  mainpic.classList.toggle(invis)
