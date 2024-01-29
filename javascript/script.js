@@ -34,7 +34,7 @@ const videos = [
 //     tekstOpdracht: " ",
 //     tekstKwaliteiten: "",
 //     tekstUitwerking: "",
-//     plaatje1: "",
+//     plaatje1: "url('../')",
 //     plaatje2:""
 // }
 
@@ -58,11 +58,11 @@ const KeesClosed = {
 
 const FEDsite = {
     titel: "Site (na)Maken",
-    tekstOpdracht: " ",
+    tekstOpdracht: "",
     tekstKwaliteiten: "",
     tekstUitwerking: "In deze opdracht heb ik zo goed mogelijk van 2 pagina’s de site van floraholland in code nagebouwd. Hierna heb ik verschillende features toegevoegd, zoals een darkmode en een optie om de lettergrootte aan te passen.  ",
-    plaatje1: "",
-    plaatje2:""
+    plaatje1: "url('../Assets/PortfolioPics/FEDsite/FEDmine.jpg')",
+    plaatje2:"Assets/PortfolioPics/FEDsite/FEDAnimatie.png"
 }
 
 const kaarten = {
@@ -70,7 +70,7 @@ const kaarten = {
     tekstOpdracht: "",
     tekstKwaliteiten: "",
     tekstUitwerking: "",
-    plaatje1: "",
+    plaatje1: "url('../')",
     plaatje2:""
 }
 
@@ -79,7 +79,16 @@ const flesjes = {
     tekstOpdracht: " ",
     tekstKwaliteiten: "",
     tekstUitwerking: "",
-    plaatje1: "",
+    plaatje1: "url('../')",
+    plaatje2:""
+}
+
+const characters = {
+    titel: "",
+    tekstOpdracht: " ",
+    tekstKwaliteiten: "",
+    tekstUitwerking: "",
+    plaatje1: "url('../')",
     plaatje2:""
 }
 
@@ -92,9 +101,9 @@ const artikelen = [
     flesjes,
     tostinis,
     FEDsite,
-    "characters????",
-    "dnd story??? (magpie???)",
-    "tekeningen"
+    characters,
+    // "dnd story??? (magpie???)",
+    // "tekeningen"
 ]
 
 
@@ -180,12 +189,14 @@ var toelichtingTekst = document.querySelector(".overProject p");
 
 var subImg = document.querySelector(".subImg");
 
-var titel = document.querySelector(".titel");
-console.log(titel);
+var titelBlock = document.querySelector("h2.titel");
+var titelArticle = document.querySelector("h1.titel");
+// console.log(titelArticle);
 
 function updateTekst() {
     // titel.textContent = artikelen[k];
-    titel.textContent = artikelen[Math.round(i / 3)].titel;
+    titelBlock.textContent = artikelen[Math.round(i / 3)].titel;
+    titelArticle.textContent = artikelen[Math.round(i / 3)].titel;
     opdrachtTekst.textContent = artikelen[Math.round(i / 3)].tekstOpdracht;
     toelichtingTekst.textContent = artikelen[Math.round(i / 3)].tekstUitwerking;
     subImg.src= artikelen[Math.round(i / 3)].plaatje2;
