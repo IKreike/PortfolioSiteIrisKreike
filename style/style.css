@@ -1,0 +1,126 @@
+body{
+    background-color: white;
+}
+
+#zerostate{
+    background-color: rgba(127, 255, 212, 0.326);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+
+#video{
+    position: fixed;
+    align-items: center;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    background-color: yellowgreen;
+}
+
+button {
+    background-color: yellowgreen;
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    /* border-radius: 5px; */
+    border-style: none;
+}
+
+.content{
+    /* display: flex;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1em;
+    height: 80vh;
+}
+
+.vorige, .volgende{
+    width: 8em;
+    grid-row: 3;
+    justify-self: center;
+    align-self: center;
+}
+
+.vorige{
+    grid-column: 1;
+}
+
+.volgende{
+    grid-column: 5;
+}
+
+.banner{
+    /* background-color: rgb(238, 0, 255); */
+    width: 100%;
+    grid-column: 2/-2;
+    grid-row: 2/5; 
+    /* height: 100%; */
+    /* align-self: center; */
+    display: flex;
+    /* justify-content: end; */
+    flex-direction: column;
+    align-items:center;
+    background-image: url("../Assets/temporaryImg.jpeg");
+}
+
+.banner img{
+    width: 100%;
+    top: 0;
+    /* z-index: 1; */
+    /* max-height: max-content; */
+    overflow: hidden;
+}
+
+/* article h2{
+    justify-self: flex-start;
+} */
+
+.informatie{
+    background-color: blueviolet;
+    padding: 1em;
+    /* width: 30em; */
+    justify-self: end;
+}
+
+
+/******************************/
+/* informatiegedeelte styling */
+/******************************/
+
+.toelichting{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    gap: 1em;
+}
+.toelichting h1{
+    grid-column: span 3;
+}
+
+.opdracht{
+    grid-column: 1/3;
+}
+
+.toelichting img{
+    width: 100%;
+}
+
+.overProject{
+    grid-column: 2/4;
+}
+
+.invis{
+    display: none;
+}
