@@ -3,7 +3,6 @@ var i;
 i = 1;
 console.log(i);
 
-
 const videos = [
     // "Assets/videos/gold-appearance.mp4",
     // "Assets/videos/gold-pet.mp4",
@@ -11,6 +10,22 @@ const videos = [
     // "Assets/videos/green-appearance.mp4",
     // "Assets/videos/green-pet.mp4",
     // "Assets/videos/green-disappearance.mp4",
+    // boekfilmpjes
+    "Assets/videos/OpenBook.mp4",
+    "Assets/videos/IdleBook.mp4",
+    "Assets/videos/CloseBook.mp4",
+    //laptopfilmpjes
+    "Assets/videos/TakeLaptop.mp4",
+    "Assets/videos/laptopBOX.mp4",
+    "Assets/videos/LaptopGone.mp4",
+    //cards filmpjes
+    "Assets/videos/OpenCards.mp4",
+    "Assets/videos/Cardsflip.mp4",
+    "Assets/videos/AwayCards.mp4",
+    //scroll filmpjes
+    "Assets/videos/TakeScroll.mp4",
+    "Assets/videos/scrollBOX.mp4",
+    "Assets/videos/ScrollAway.mp4",
     // boekfilmpjes
     "Assets/videos/OpenBook.mp4",
     "Assets/videos/IdleBook.mp4",
@@ -67,9 +82,9 @@ const FEDsite = {
 
 const kaarten = {
     titel: "Fantasy Mapmaking",
-    tekstOpdracht: "",
+    tekstOpdracht: "sdjlsdhf",
     tekstKwaliteiten: "",
-    tekstUitwerking: "",
+    tekstUitwerking: "kaarten uitwerkeing",
     plaatje1: "url('../Assets/PortfolioPics/Kaarten/map-1.1.jpg')",
     plaatje2:"../Assets/PortfolioPics/Kaarten/map-3.jpg"
 }
@@ -78,18 +93,18 @@ const flesjes = {
     titel: "Bottle Art",
     tekstOpdracht: "In my personal Time I like to make things. One these interests is turning tiny glass bottles into art. I use all kind of materials and techniques to make these bottles come to life, and the end results are beautiful showpieces that are easy to fall in love with.",
     tekstKwaliteiten: "",
-    tekstUitwerking: "Doing these little personal project makes me explore the limits of my creative brain. I constantly run into questions, for example: how am I going to display realistic moss? (Answer: use dried moss) Figuring out solutions for these problems takes a lot of trial and error, but more often than the other try-out lead to inspiration for other projects. My goal is to use different technieques and materials that combine into new designs.",
+    tekstUitwerking: "Doing these little personal projects makes me explore the limits of my creative brain. I constantly run into questions, for example: how am I going to display realistic moss? (Answer: use dried moss) Figuring out solutions for these problems takes a lot of trial and error, but more often than the other try-out lead to inspiration for other projects. My goal is to use different technieques and materials that combine into new designs.",
     plaatje1: "url('../Assets/PortfolioPics/Flesjes/bottle-mushroom1.jpg')",
     plaatje2:"../Assets/PortfolioPics/Flesjes/bottle-death.jpg"
 }
 
 const characters = {
     titel: "Character design",
-    tekstOpdracht: " ",
+    tekstOpdracht: "edskfraiowe",
     tekstKwaliteiten: "",
-    tekstUitwerking: "",
-    plaatje1: "url('../')",
-    plaatje2:""
+    tekstUitwerking: "erwoaeijld",
+    plaatje1: "url('../Assets/PortfolioPics/Characters/character-Xyris.png')",
+    plaatje2:"../Assets/PortfolioPics/Characters/character-wanderer.jpg"
 }
 
 
@@ -139,7 +154,7 @@ function volgendePagina1() {
     setTimeout(volgendePagina2, 2000);
     // play.length gebruiken ipv 2 sec, kan alleen als je weet hoeveel fps (werkt nog steeds niet diosfjasljflah) (met *50 werkte het ongeveer)
 
-    mainpic.classList.toggle("invis");
+    mainpic.classList.add("invis");
 }
 
 function volgendePagina2() {
@@ -156,7 +171,7 @@ function volgendePagina3() {
     let play = videos[i];
     video.src = play;
     updateTekst();
-    mainpic.classList.toggle("invis");
+    mainpic.classList.remove("invis");
 }
 
 // https://stackoverflow.com/questions/52514522/html5-video-how-to-seamlessly-play-several-videos-and-then-loop-the-sequence
@@ -170,7 +185,7 @@ function vorigePagina() {
     setTimeout(vorigePagina2, 2000);
     // play.length gebruiken ipv 2 sec, kan alleen als je weet hoeveel fps
 
-    mainpic.classList.toggle("invis");
+    mainpic.classList.add("invis");
 }
 
 function vorigePagina2() {
@@ -186,17 +201,21 @@ function vorigePagina2() {
 var opdrachtTekst = document.querySelector(".opdracht p");
 var kwaliteitenLijst = document.querySelector(".kwaliteiten");
 var toelichtingTekst = document.querySelector(".overProject p");
+console.log(opdrachtTekst);
 
 var subImg = document.querySelector(".subImg");
 
-var titelBlock = document.querySelector("h2.titel");
-var titelArticle = document.querySelector("h1.titel");
+// var titelBlock = document.querySelector("h2.titel");
+var titelArticle = document.querySelector(".titel");
 // console.log(titelArticle);
 
 function updateTekst() {
     // titel.textContent = artikelen[k];
-    titelBlock.textContent = artikelen[Math.round(i / 3)].titel;
+    console.log(artikelen[Math.round(i / 3)]);
+    console.log(titelArticle);
+    // titelBlock.textContent = artikelen[Math.round(i / 3)].titel;
     titelArticle.textContent = artikelen[Math.round(i / 3)].titel;
+    console.log(titelArticle.textContent);
     opdrachtTekst.textContent = artikelen[Math.round(i / 3)].tekstOpdracht;
     toelichtingTekst.textContent = artikelen[Math.round(i / 3)].tekstUitwerking;
     subImg.src= artikelen[Math.round(i / 3)].plaatje2;
@@ -208,3 +227,12 @@ function updateTekst() {
 }
 
 //  mainpic.classList.toggle(invis)
+
+if (artikelen[Math.round(i / 3)]=null){
+    console.log("er is niks meer")
+}
+
+
+i=2;
+console.log(artikelen[i]);
+updateTekst();
