@@ -55,10 +55,10 @@ const videos = [
 
 const tostinis = {
     titel: "tostini's",
-    tekstOpdracht: "",
+    tekstOpdracht: "tekst tostinis",
     tekstKwaliteiten: "Kleurtheorie Character design Creaivieteit binnen limieten Passend thema bedenken en aanhouden",
-    tekstUitwerking: "",
-    plaatje1: "url('../Assets/PortfolioPics/Tostiny's/tostini's-final.jpeg')",
+    tekstUitwerking: "m eer tekst tostinis",
+    plaatje1: "url('../Assets/PortfolioPics/Tostiny's/tosti-progress.png')",
     plaatje2: "../Assets/PortfolioPics/Tostiny's/mascotte-1.png"
 }
 
@@ -85,7 +85,7 @@ const kaarten = {
     tekstOpdracht: "sdjlsdhf",
     tekstKwaliteiten: "",
     tekstUitwerking: "kaarten uitwerkeing",
-    plaatje1: "url('../Assets/PortfolioPics/Kaarten/map-1.1.jpg')",
+    plaatje1: "url(../Assets/PortfolioPics/Kaarten/map-1.1.jpg)",
     plaatje2: "../Assets/PortfolioPics/Kaarten/map-3.jpg"
 }
 
@@ -137,11 +137,11 @@ console.log(video);
 
 
 var vorige = document.querySelector(".vorige");
-console.log(vorige);
+// console.log(vorige);
 vorige.addEventListener("click", vorigePagina);
 
 var volgende = document.querySelector(".volgende");
-console.log(volgende);
+// console.log(volgende);
 volgende.addEventListener("click", volgendePagina1);
 
 
@@ -151,7 +151,7 @@ function volgendePagina1() {
     video.src = play;
 
     console.log(play.length);
-    setTimeout(volgendePagina2, 2000);
+    setTimeout(volgendePagina2, 1000);
     // play.length gebruiken ipv 2 sec, kan alleen als je weet hoeveel fps (werkt nog steeds niet diosfjasljflah) (met *50 werkte het ongeveer)
 
     mainpic.classList.add("invis");
@@ -162,7 +162,7 @@ function volgendePagina2() {
     i++;
     let play = videos[i];
     video.src = play;
-    setTimeout(volgendePagina3, 2000);
+    setTimeout(volgendePagina3, 1000);
 }
 
 function volgendePagina3() {
@@ -182,7 +182,7 @@ function vorigePagina() {
     video.src = play;
 
     console.log(play.length);
-    setTimeout(vorigePagina2, 2000);
+    setTimeout(vorigePagina2, 1000);
     // play.length gebruiken ipv 2 sec, kan alleen als je weet hoeveel fps
 
     mainpic.classList.add("invis");
@@ -193,7 +193,7 @@ function vorigePagina2() {
     i = i - 5;
     let play = videos[i];
     video.src = play;
-    setTimeout(volgendePagina3, 2000);
+    setTimeout(volgendePagina3, 1000);
 }
 
 
