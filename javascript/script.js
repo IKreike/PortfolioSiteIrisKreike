@@ -58,8 +58,8 @@ const tostinis = {
     tekstOpdracht: "tekst tostinis",
     tekstKwaliteiten: "Kleurtheorie Character design Creaivieteit binnen limieten Passend thema bedenken en aanhouden",
     tekstUitwerking: "m eer tekst tostinis",
-    plaatje1: "url('../Assets/PortfolioPics/Tostiny's/tosti-progress.png')",
-    plaatje2: "../Assets/PortfolioPics/Tostiny's/mascotte-1.png"
+    plaatje1: "url(./Assets/PortfolioPics/Tostiny's/tosti-progress.png)",
+    plaatje2: "./Assets/PortfolioPics/Tostiny's/mascotte-1.png"
 }
 
 const KeesClosed = {
@@ -76,8 +76,8 @@ const FEDsite = {
     tekstOpdracht: "For this project I tried to remake 2 pages of the Floraholland nl site with front-end coding. I used HTML, CSS and JavaScript to make the pages look an work as similar as possible after witch I added my own flourish with svg animation, a darkmode and accessibility options. ",
     tekstKwaliteiten: "",
     tekstUitwerking: "I really liked this project, as it developed my skills in coding much further in what I expected. In having to re-build something you are forced to discover new ways and tricks of doing things, instead of sticking in your old and trusted methods. For example I learned a lot about svg animation and saw how such a small and relatively simple thing can lift up the website as a whole. ",
-    plaatje1: "url('../Assets/PortfolioPics/FEDsite/FEDmine.jpg')",
-    plaatje2: "../Assets/PortfolioPics/FEDsite/FEDAnimatie.png"
+    plaatje1: "url(./Assets/PortfolioPics/FEDsite/FEDmine.jpg)",
+    plaatje2: "./Assets/PortfolioPics/FEDsite/FEDAnimatie.png"
 }
 
 const kaarten = {
@@ -85,8 +85,8 @@ const kaarten = {
     tekstOpdracht: "sdjlsdhf",
     tekstKwaliteiten: "",
     tekstUitwerking: "kaarten uitwerkeing",
-    plaatje1: "url(../Assets/PortfolioPics/Kaarten/map-1.1.jpg)",
-    plaatje2: "../Assets/PortfolioPics/Kaarten/map-3.jpg"
+    plaatje1: "url(./Assets/PortfolioPics/Kaarten/map-1.1.jpg)",
+    plaatje2: "./Assets/PortfolioPics/Kaarten/map-3.jpg"
 }
 
 const flesjes = {
@@ -94,8 +94,8 @@ const flesjes = {
     tekstOpdracht: "In my personal Time I like to make things. One these interests is turning tiny glass bottles into art. I use all kind of materials and techniques to make these bottles come to life, and the end results are beautiful showpieces that are easy to fall in love with.",
     tekstKwaliteiten: "",
     tekstUitwerking: "Doing these little personal projects makes me explore the limits of my creative brain. I constantly run into questions, for example: how am I going to display realistic moss? (Answer: use dried moss) Figuring out solutions for these problems takes a lot of trial and error, but more often than the other try-out lead to inspiration for other projects. My goal is to use different technieques and materials that combine into new designs.",
-    plaatje1: "../Assets/PortfolioPics/Flesjes/bottle-mushroom1.jpg",
-    plaatje2: "../Assets/PortfolioPics/Flesjes/bottle-death.jpg"
+    plaatje1: "url(./Assets/PortfolioPics/Flesjes/bottle-mushroom1.jpg)",
+    plaatje2: "./Assets/PortfolioPics/Flesjes/bottle-death.jpg"
 }
 
 const characters = {
@@ -103,8 +103,8 @@ const characters = {
     tekstOpdracht: "edskfraiowe",
     tekstKwaliteiten: "",
     tekstUitwerking: "erwoaeijld",
-    plaatje1: "url('../Assets/PortfolioPics/Characters/character-Xyris.png')",
-    plaatje2: "../Assets/PortfolioPics/Characters/character-wanderer.jpg"
+    plaatje1: "url(./Assets/PortfolioPics/Characters/character-Xyris.png)",
+    plaatje2: "./Assets/PortfolioPics/Characters/character-wanderer.jpg"
 }
 
 
