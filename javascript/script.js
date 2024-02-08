@@ -77,7 +77,7 @@ const FEDsite = {
     tekstKwaliteiten: "",
     tekstUitwerking: "I really liked this project, as it developed my skills in coding much further in what I expected. In having to re-build something you are forced to discover new ways and tricks of doing things, instead of sticking in your old and trusted methods. For example I learned a lot about svg animation and saw how such a small and relatively simple thing can lift up the website as a whole. ",
     plaatje1: "url('../Assets/PortfolioPics/FEDsite/FEDmine.jpg')",
-    plaatje2:"../Assets/PortfolioPics/FEDsite/FEDAnimatie.png"
+    plaatje2: "../Assets/PortfolioPics/FEDsite/FEDAnimatie.png"
 }
 
 const kaarten = {
@@ -86,7 +86,7 @@ const kaarten = {
     tekstKwaliteiten: "",
     tekstUitwerking: "kaarten uitwerkeing",
     plaatje1: "url('../Assets/PortfolioPics/Kaarten/map-1.1.jpg')",
-    plaatje2:"../Assets/PortfolioPics/Kaarten/map-3.jpg"
+    plaatje2: "../Assets/PortfolioPics/Kaarten/map-3.jpg"
 }
 
 const flesjes = {
@@ -95,7 +95,7 @@ const flesjes = {
     tekstKwaliteiten: "",
     tekstUitwerking: "Doing these little personal projects makes me explore the limits of my creative brain. I constantly run into questions, for example: how am I going to display realistic moss? (Answer: use dried moss) Figuring out solutions for these problems takes a lot of trial and error, but more often than the other try-out lead to inspiration for other projects. My goal is to use different technieques and materials that combine into new designs.",
     plaatje1: "url('../Assets/PortfolioPics/Flesjes/bottle-mushroom1.jpg')",
-    plaatje2:"../Assets/PortfolioPics/Flesjes/bottle-death.jpg"
+    plaatje2: "../Assets/PortfolioPics/Flesjes/bottle-death.jpg"
 }
 
 const characters = {
@@ -104,13 +104,13 @@ const characters = {
     tekstKwaliteiten: "",
     tekstUitwerking: "erwoaeijld",
     plaatje1: "url('../Assets/PortfolioPics/Characters/character-Xyris.png')",
-    plaatje2:"../Assets/PortfolioPics/Characters/character-wanderer.jpg"
+    plaatje2: "../Assets/PortfolioPics/Characters/character-wanderer.jpg"
 }
 
 
 
 const artikelen = [
-    "none",
+    // "none",
     kaarten,
     KeesClosed,
     flesjes,
@@ -126,7 +126,7 @@ const artikelen = [
 console.log(artikelen[2].titel);
 
 
-var mainpic =document.querySelector(".banner");
+var mainpic = document.querySelector(".banner");
 // console.log(mainpic.style.backgroundImage);
 // var mainBlock = document.querySelector(".")
 
@@ -210,29 +210,39 @@ var titelArticle = document.querySelector(".titel");
 // console.log(titelArticle);
 
 function updateTekst() {
-    // titel.textContent = artikelen[k];
-    console.log(artikelen[Math.round(i / 3)]);
-    console.log(titelArticle);
-    // titelBlock.textContent = artikelen[Math.round(i / 3)].titel;
+    // console.log(artikelen[Math.round(i / 3)]);
+    // console.log(titelArticle);
     titelArticle.textContent = artikelen[Math.round(i / 3)].titel;
-    console.log(titelArticle.textContent);
+    // console.log(titelArticle.textContent);
     opdrachtTekst.textContent = artikelen[Math.round(i / 3)].tekstOpdracht;
     toelichtingTekst.textContent = artikelen[Math.round(i / 3)].tekstUitwerking;
-    subImg.src= artikelen[Math.round(i / 3)].plaatje2;
-    console.log("titel word vervangen");
-    // mainpic.src= artikelen[Math.round(i / 3)].plaatje1;
-    mainpic.style.backgroundImage= artikelen[Math.round(i / 3)].plaatje1;
-    console.log(mainpic);
-    console.log(artikelen[Math.round(i / 3)].plaatje1);
+    subImg.src = artikelen[Math.round(i / 3)].plaatje2;
+    // console.log("titel word vervangen");
+    mainpic.style.backgroundImage = artikelen[Math.round(i / 3)].plaatje1;
+    // console.log(mainpic);
+    // console.log(artikelen[Math.round(i / 3)].plaatje1);
+
+    // console.log(artikelen[i]);
+    // console.log(i);
+    // console.log(Math.round(i / 3));
+    // console.log(artikelen.length-1);
+    if (i == 1) {
+        vorige.classList.add("invis");
+        console.log("button terugweg");
+    } else {
+        vorige.classList.remove("invis");
+    }
+    if (Math.round(i / 3) == artikelen.length-1) {
+        volgende.classList.add("invis");
+        console.log("button verderweg");
+    } else {
+        volgende.classList.remove("invis");
+    }
 }
 
-//  mainpic.classList.toggle(invis)
-
-if (artikelen[Math.round(i / 3)]=null){
-    console.log("er is niks meer")
-}
 
 
-i=2;
-console.log(artikelen[i]);
+
+
+i = 1;
 updateTekst();
