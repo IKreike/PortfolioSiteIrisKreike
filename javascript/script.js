@@ -54,12 +54,12 @@ const videos = [
 // }
 
 const tostinis = {
-    titel: "tostini's",
-    tekstOpdracht: "tekst tostinis",
+    titel: "Tostini's",
+    tekstOpdracht: "In this project the goal was to make a one pager with 3 articles about different subdivisions of a food. Extra challenging was that it had to be in a Naïve mascot style and were limited with the use of maximum two colors and tones of the chosen colors. I chose the complementary colors green and pink because I liked the idea of combining two unnatural colors in a design that from origin exists only in natural colors.",
     tekstKwaliteiten: "Kleurtheorie Character design Creaivieteit binnen limieten Passend thema bedenken en aanhouden",
-    tekstUitwerking: "m eer tekst tostinis",
-    plaatje1: "url(./Assets/PortfolioPics/Tostiny's/tosti-progress.png)",
-    plaatje2: "./Assets/PortfolioPics/Tostiny's/mascotte-1.png"
+    tekstUitwerking: "This project for me was an exploration of drawing with vectors. It was a new technique for me at the time, and I feel like it worked out amazing. I really like the way I used 3 different mascots to be both the food and the advertiser. I came to find that doing this project in this way, especially with the restrictions, made me learn a lot about keeping in style and vector images.",
+    plaatje1: "url(./Assets/PortfolioPics/Tostiny's/mascotte-3.png)",
+    plaatje2: "./Assets/PortfolioPics/Tostiny's/mascotte-3.png"
 }
 
 const KeesClosed = {
