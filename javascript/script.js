@@ -67,8 +67,8 @@ const KeesClosed = {
     tekstOpdracht: "The goal of this project was to make a product that lies close to my passion, and that would simultaneously help better the world. This is a shared project between Tessa van Breukelen, Denizay Ögmen and me. Our shared passion for games and storytelling landed us in this group, and the product of this project made us all proud.",
     tekstKwaliteiten: "kwaliteiten/skills (meerdere dingen of een andere array??)",
     tekstUitwerking: "This puzzlebox consists of three stadia, in wich the user helps a hacker protect an organization from online criminals. Throughout the game, the puzzler can pick up hints that something is wrong, and that the hacker they are helping might not all be trusted. These clues are common signs of internet scamming such as weird e-mail addresses, being asked to klick on links and the promise of a big prize. Making use of this, we tried to make the puzzlers aware of the dangers of common scams on the internet.",
-    plaatje1: "url('../Assets/PortfolioPics/KEES/Kees-open.jpeg')",
-    plaatje2: "../Assets/PortfolioPics/KEES/Kees-closed.jpeg"
+    plaatje1: "url(./Assets/PortfolioPics/KEES/Kees-open.jpeg)",
+    plaatje2: "./Assets/PortfolioPics/KEES/Kees-closed.jpeg"
 }
 
 const FEDsite = {
@@ -94,7 +94,7 @@ const flesjes = {
     tekstOpdracht: "In my personal Time I like to make things. One these interests is turning tiny glass bottles into art. I use all kind of materials and techniques to make these bottles come to life, and the end results are beautiful showpieces that are easy to fall in love with.",
     tekstKwaliteiten: "",
     tekstUitwerking: "Doing these little personal projects makes me explore the limits of my creative brain. I constantly run into questions, for example: how am I going to display realistic moss? (Answer: use dried moss) Figuring out solutions for these problems takes a lot of trial and error, but more often than the other try-out lead to inspiration for other projects. My goal is to use different technieques and materials that combine into new designs.",
-    plaatje1: "url('../Assets/PortfolioPics/Flesjes/bottle-mushroom1.jpg')",
+    plaatje1: "../Assets/PortfolioPics/Flesjes/bottle-mushroom1.jpg",
     plaatje2: "../Assets/PortfolioPics/Flesjes/bottle-death.jpg"
 }
 
