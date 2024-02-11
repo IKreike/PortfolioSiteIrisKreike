@@ -50,7 +50,9 @@ const videos = [
 //     tekstKwaliteiten: "",
 //     tekstUitwerking: "",
 //     plaatje1: "url('../')",
-//     plaatje2:""
+//     plaatje2: "",
+//     plaatje3: "",
+//     plaatje4: ""
 // }
 
 const tostinis = {
@@ -59,7 +61,9 @@ const tostinis = {
     tekstKwaliteiten: "Kleurtheorie Character design Creaivieteit binnen limieten Passend thema bedenken en aanhouden",
     tekstUitwerking: "This project for me was an exploration of drawing with vectors. It was a new technique for me at the time, and I feel like it worked out amazing. I really like the way I used 3 different mascots to be both the food and the advertiser. I came to find that doing this project in this way, especially with the restrictions, made me learn a lot about keeping in style and vector images.",
     plaatje1: "url(./Assets/PortfolioPics/Tostiny's/mascotte-3.png)",
-    plaatje2: "./Assets/PortfolioPics/Tostiny's/mascotte-3.png"
+    plaatje2: "./Assets/PortfolioPics/Tostiny's/mascotte-3.png",
+    plaatje3: "./Assets/PortfolioPics/Tostiny's/mascotte-1.png",
+    plaatje4: "./Assets/PortfolioPics/Tostiny's/mascotte-2.png"
 }
 
 const KeesClosed = {
@@ -68,7 +72,9 @@ const KeesClosed = {
     tekstKwaliteiten: "kwaliteiten/skills (meerdere dingen of een andere array??)",
     tekstUitwerking: "This puzzlebox consists of three stadia, in wich the user helps a hacker protect an organization from online criminals. Throughout the game, the puzzler can pick up hints that something is wrong, and that the hacker they are helping might not all be trusted. These clues are common signs of internet scamming such as weird e-mail addresses, being asked to klick on links and the promise of a big prize. Making use of this, we tried to make the puzzlers aware of the dangers of common scams on the internet.",
     plaatje1: "url(./Assets/PortfolioPics/KEES/Kees-open.jpeg)",
-    plaatje2: "./Assets/PortfolioPics/KEES/Kees-closed.jpeg"
+    plaatje3: "./Assets/PortfolioPics/KEES/Kees-closed.jpeg",
+    plaatje2: "./Assets/PortfolioPics/KEES/Poster1 copy.png",
+    plaatje4: ""
 }
 
 const FEDsite = {
@@ -77,7 +83,9 @@ const FEDsite = {
     tekstKwaliteiten: "",
     tekstUitwerking: "I really liked this project, as it developed my skills in coding much further in what I expected. In having to re-build something you are forced to discover new ways and tricks of doing things, instead of sticking in your old and trusted methods. For example I learned a lot about svg animation and saw how such a small and relatively simple thing can lift up the website as a whole. ",
     plaatje1: "url(./Assets/PortfolioPics/FEDsite/FEDmine.jpg)",
-    plaatje2: "./Assets/PortfolioPics/FEDsite/FEDAnimatie.png"
+    plaatje3: "./Assets/PortfolioPics/FEDsite/FEDAnimatie.png",
+    plaatje2: "./Assets/PortfolioPics/FEDsite/FEDmenu.jpg",
+    plaatje4: ""
 }
 
 const kaarten = {
@@ -86,7 +94,9 @@ const kaarten = {
     tekstKwaliteiten: "",
     tekstUitwerking: "kaarten uitwerkeing",
     plaatje1: "url(./Assets/PortfolioPics/Kaarten/map-1.1.jpg)",
-    plaatje2: "./Assets/PortfolioPics/Kaarten/map-3.jpg"
+    plaatje2: "./Assets/PortfolioPics/Kaarten/map-3.jpg",
+    plaatje3: "",
+    plaatje4: ""
 }
 
 const flesjes = {
@@ -95,7 +105,9 @@ const flesjes = {
     tekstKwaliteiten: "",
     tekstUitwerking: "Doing these little personal projects makes me explore the limits of my creative brain. I constantly run into questions, for example: how am I going to display realistic moss? (Answer: use dried moss) Figuring out solutions for these problems takes a lot of trial and error, but more often than the other try-out lead to inspiration for other projects. My goal is to use different technieques and materials that combine into new designs.",
     plaatje1: "url(./Assets/PortfolioPics/Flesjes/bottle-mushroom1.jpg)",
-    plaatje2: "./Assets/PortfolioPics/Flesjes/bottle-death.jpg"
+    plaatje2: "./Assets/PortfolioPics/Flesjes/bottle-death.jpg",
+    plaatje3: "./Assets/PortfolioPics/Flesjes/bottle-blood.jpg",
+    plaatje4: "./Assets/PortfolioPics/Flesjes/bottle-jacksDice.jpg"
 }
 
 const characters = {
@@ -104,19 +116,32 @@ const characters = {
     tekstKwaliteiten: "",
     tekstUitwerking: "erwoaeijld",
     plaatje1: "url(./Assets/PortfolioPics/Characters/character-Xyris.png)",
-    plaatje2: "./Assets/PortfolioPics/Characters/character-wanderer.jpg"
+    plaatje2: "./Assets/PortfolioPics/Characters/character-wanderer.jpg",
+    plaatje3: "./Assets/PortfolioPics/Characters/character-jack.jpg",
+    plaatje4: "./Assets/PortfolioPics/Characters/character-NikolaHeadshot.jpg"
 }
 
-
+const vroem = {
+    titel: "",
+    tekstOpdracht: " ",
+    tekstKwaliteiten: "",
+    tekstUitwerking: "",
+    plaatje1: "url('../')",
+    plaatje2: "",
+    plaatje3: "",
+    plaatje4: ""
+}
 
 const artikelen = [
     // "none",
-    kaarten,
+    // kaarten,
     KeesClosed,
     flesjes,
     tostinis,
     FEDsite,
     characters,
+    // vroem,
+    // beyond stuur project,
     // "dnd story??? (magpie???)",
     // "tekeningen"
 ]
@@ -204,6 +229,8 @@ var toelichtingTekst = document.querySelector(".overProject p");
 console.log(opdrachtTekst);
 
 var subImg = document.querySelector(".subImg");
+var img3 = document.querySelector(".img3");
+var img4 = document.querySelector(".img4");
 
 // var titelBlock = document.querySelector("h2.titel");
 var titelArticle = document.querySelector(".titel");
@@ -217,6 +244,8 @@ function updateTekst() {
     opdrachtTekst.textContent = artikelen[Math.round(i / 3)].tekstOpdracht;
     toelichtingTekst.textContent = artikelen[Math.round(i / 3)].tekstUitwerking;
     subImg.src = artikelen[Math.round(i / 3)].plaatje2;
+    img3.src = artikelen[Math.round(i / 3)].plaatje3;
+    img4.src = artikelen[Math.round(i / 3)].plaatje4;
     // console.log("titel word vervangen");
     mainpic.style.backgroundImage = artikelen[Math.round(i / 3)].plaatje1;
     // console.log(mainpic);
@@ -232,7 +261,7 @@ function updateTekst() {
     } else {
         vorige.classList.remove("invis");
     }
-    if (Math.round(i / 3) == artikelen.length-1) {
+    if (Math.round(i / 3) == artikelen.length - 1) {
         volgende.classList.add("invis");
         console.log("button verderweg");
     } else {
