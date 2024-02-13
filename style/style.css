@@ -84,7 +84,7 @@ button {
     background-repeat:no-repeat;
 
     border-color: rgb(230, 0, 255);
-    border-style:double;
+    /* border-style:double; */
     border-width: 1em;
 }
 
@@ -120,6 +120,7 @@ h2 {
     border-color: black;
     border-style:double;
     border-width: 1em;
+    padding: .5em;
 }
 .toelichting h1{
     grid-column: span 3;
