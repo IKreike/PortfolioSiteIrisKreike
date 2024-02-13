@@ -82,6 +82,7 @@ button {
     background-size: contain;
     background-position: center;
     background-repeat:no-repeat;
+    /* background-repeat: 3; */
 
     border-color: rgb(230, 0, 255);
     /* border-style:double; */
@@ -151,5 +152,9 @@ h2 {
 }
 
 .img3, .img4{
-    height: max-content;
+    /* height: max-content; */
+    /* height: min-content; */
+    /* max-height: 20em; */
+    width: 100%;
+    overflow: hidden;
 }
